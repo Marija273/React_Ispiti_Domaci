@@ -23,7 +23,7 @@ function Login(){
     return (
         <div className="login">
 
-            <LoginForma />
+            <LoginForma login={login} />
             
         </div>
     );

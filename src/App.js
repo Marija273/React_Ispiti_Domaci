@@ -11,7 +11,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="/prijava" element={<IspitiPrijava />} />
+          <Route path="/ispitiprijava" element={<IspitiPrijava />} />
         </Routes>
       </Router>
     </div>
