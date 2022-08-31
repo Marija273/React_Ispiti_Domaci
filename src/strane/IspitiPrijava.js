@@ -14,6 +14,15 @@ function IspitiPrijava() {
     const [prijavljeniIspiti, setPrijavljeniIspiti] = useState([]);
 
 
+    function dodaj(id) {
+
+        ispiti.forEach(ispit => {
+            if (ispit.id === id) {
+                setPrijavljeniIspiti(prijavljeniIspiti => [...prijavljeniIspiti, ispit]);
+            }
+        });
+    }
+
     return (
         <div className="ispitiprijava">
             <h1 className="mt-3">Prijava ispita</h1>
@@ -34,7 +43,7 @@ function IspitiPrijava() {
                             <tr key={ispit.id}>
                                 <td>{ispit.ispit}</td>
                                 <td>{ispit.espb}</td>
-                                <td><button className="btn btn-primary" value={ispit.id}>Prijavi</button></td>
+                                <td><button onClick={() => dodaj(ispit.id)} className="btn btn-primary" value={ispit.id}>Prijavi</button></td>
                             </tr>
                         );
                     })}
