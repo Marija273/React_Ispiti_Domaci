@@ -2,7 +2,16 @@ import { useState } from 'react';
 
 function LoginForma() {
 
+    const [korisnickoIme, setKorisnickoIme] = useState('');
+    const [lozinka, setLozinka] = useState('');
 
+    function updateKIme(e) {
+        setKorisnickoIme(e.target.value);
+    }
+
+    function updateLoz(e) {
+        setLozinka(e.target.value);
+    }
 
     return (
         <div className="loginforma">
