@@ -1,3 +1,4 @@
+import LoginForma from "../komponente/LoginForma";
 
 function Login() {
 
@@ -11,6 +12,7 @@ function Login() {
     return (
         <div className="login">
 
+            <LoginForma />
 
         </div>
     );

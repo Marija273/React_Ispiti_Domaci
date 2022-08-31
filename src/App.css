@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+#username-login, #password-login{
+  width: 400px;
+  margin-top: 10px;
+  margin-left: 570px;
+}
+
+#username-h3{
+  margin-top: 150px;
+}
+
+#password-h3{
+  margin-top: 20px;
+}
+
+#login-dugme{
+  width: 200px;
+  margin-top: 30px;
+}
