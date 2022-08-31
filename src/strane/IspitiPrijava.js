@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Prijavljeni from '../komponente/Prijavljeni';
 
 function IspitiPrijava() {
 
@@ -51,6 +52,7 @@ function IspitiPrijava() {
 
             </table>
 
+            <Prijavljeni prijavljeni={prijavljeniIspiti} />
 
 
         </div>
