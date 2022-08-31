@@ -1,6 +1,8 @@
 import { useState } from 'react';
 
-function LoginForma() {
+
+function LoginForma(props) {
+
 
     const [korisnickoIme, setKorisnickoIme] = useState('');
     const [lozinka, setLozinka] = useState('');
@@ -22,7 +24,7 @@ function LoginForma() {
             <h4 id="password-h3">Lozinka</h4>
             <input type="password" className="form-control" id="password-login" value={lozinka} onChange={updateLoz} />
 
-            <button className="btn btn-primary" id="login-dugme">Prijavi se</button>
+            <button className="btn btn-primary" onClick={() => props.login(korisnickoIme, lozinka)} id="login-dugme">Prijavi se</button>
 
         </div >
     )
